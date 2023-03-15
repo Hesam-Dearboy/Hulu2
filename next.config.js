@@ -4,4 +4,16 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+
+
+module.exports = {
+  nextConfig , 
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'image.tmdb.org',
+      },
+    ],
+  },
+}
