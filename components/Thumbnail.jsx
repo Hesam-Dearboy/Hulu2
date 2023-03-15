@@ -9,6 +9,7 @@ function Thumbnail({result}) {
   return (
     <div className=' cursor-pointer group p-2 transition duration-100  transform sm:hover:scale-105 ease-in hover:z-10'>
         <Image 
+        className=' rounded-2xl'
         layout=' responsive '
         src={
             `${BASE_URL}${result.backdrop_path || result.poster_path}` || `${BASE_URL}${result.poster_path}`
